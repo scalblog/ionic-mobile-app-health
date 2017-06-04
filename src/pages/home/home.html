@@ -1,17 +1,25 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Overcome</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <img src="assets/img/overcome1.jpg" alt="congrès-2017">
+  <h2>Bienvenue au Congrès 2017</h2>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    Le Congrès de la Médecine Générale (CMGF) a été créé par et pour les médecins généralistes, il réunit en un même lieu tous les acteurs de la discipline médecine générale :
   </p>
+  <ul>
+    <li> Spécialistes de médecine générale (étudiants, internes, jeunes médecins, enseignants chercheurs, maître de stage des universités, médecins en exercice),</li>
+    <li>Experts des autres disciplines médicales,</li>
+    <li>Représentants des institutions de santé et de recherche.</li>
+  </ul>
   <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
+    Les Comités d'organisation et scientifique proposent chaque année des sessions innovantes avec une actualisation des informations médicales et scientifiques, et des voies d’amélioration de sa pratique quotidienne. Une large place aux échanges et aux débats est privilégiée
   </p>
+  <img src="assets/img/overcome2.jpg">
+  <button ion-button color="secondary" full (tap)="showPlanning()">Planning du 30 mars 2017</button>
+  <button ion-button color="secondary" full (tap)="showPlanning()">Planning du 31 mars 2017</button>
+  <button ion-button color="secondary" full (tap)="showApropos()" >informations pratiques</button>
 </ion-content>
