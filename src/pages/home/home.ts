@@ -4,6 +4,7 @@ import { NavController } from 'ionic-angular';
 //pages
 import { PlanningPage } from '../planning/planning';
 import { AboutPage } from '../about/about';
+import { NewsfeedPage } from '../newsfeed/newsfeed';
 
 @Component({
   selector: 'page-home',
@@ -21,5 +22,9 @@ export class HomePage {
 
   private showApropos() {
   	this.navCtrl.push(AboutPage);
+  }
+
+  private showNewsfeed() {
+    	this.navCtrl.push(NewsfeedPage);
   }
 }
