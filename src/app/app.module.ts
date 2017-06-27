@@ -10,6 +10,9 @@ import { PlanningPage } from '../pages/planning/planning';
 import { TabsPage } from '../pages/tabs/tabs';
 import { NewsfeedPage } from '../pages/newsfeed/newsfeed';
 
+import { NewsApiService } from '../services/newsapi.service';
+import { HttpModule } from '@angular/http';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -24,6 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     NewsfeedPage
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
@@ -38,6 +42,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     NewsfeedPage
   ],
   providers: [
+    NewsApiService,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}

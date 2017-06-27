@@ -11,9 +11,25 @@
 
 <ion-content padding>
 
-  <p>@CMG</p>
+  <p>Derniers articles publiés sur <br>The New Scientist</p>
+
+  <ion-card *ngFor="let article of news.articles">
+
+    <ion-card-content>
+      <img [src] = "article.urlToImage" />
+      <ion-card-title>
+        {{article.title}}
+        </ion-card-title>
+      <p>
+        {{article.description}}
+      </p>
+    </ion-card-content>
+  </ion-card>
+
   <p>
-    <button ion-button color="primary" menuToggle>Toggle Menu</button>
+    <button ion-button color="primary" (tap)="showHome()" >Retour à l'ACCUEIL</button>
   </p>
+
+  <small>Contenu apporté en partenariat avec <a href="https://newsapi.org">NewsApi.org</a></small>
 
 </ion-content>
